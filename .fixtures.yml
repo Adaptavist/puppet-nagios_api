@@ -1,0 +1,6 @@
+fixtures:
+  repositories:
+    stdlib:
+      repo: 'https://github.com/Adaptavist/puppet-stdlib'
+  symlinks:
+    nagios_api: "#{source_dir}"
