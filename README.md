@@ -11,8 +11,8 @@ The **nagios_api** module handles the configuration of [nagios-api](https://gith
 - `$nagios_api_service_provider` - os dependent service provider, see params.pp for default
 - `$nagios_api_package` - nagios-api package name
 - `$nagios_api_port` - port for REST api
-- `$package_deps - apt/yum dependencies
-- `$nagios_api_deps - python packages required for nagios-api
+- `$package_deps` - apt/yum dependencies
+- `$nagios_api_deps` - python packages required for nagios-api
 - `$nagios_status_file_option` - -s file, nagios-api option, where file is path to nagios status file
 - `$nagios_log_file_option` - -l file, nagios-api option, where file is path to nagios log file
 - `$nagios_command_file_option`- -c file, nagios-api option, where file is path to nagios command file
