@@ -44,11 +44,12 @@ describe 'nagios_api', :type => 'class' do
       )
     end
   end
-  context "Should install dependencies, package and service on centos" do
+  context "Should install dependencies, package and service on centos 6" do
     let(:facts){{
       :osfamily => 'RedHat',
       :operatingsystem => 'Centos',
       :lsbdistid => 'Centos',
+      :distrelease => '6'
     }}
     it do
       should contain_package('openssl-devel').with(
