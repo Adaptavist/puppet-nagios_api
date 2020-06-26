@@ -1,5 +1,5 @@
 name 'adaptavist/nagios_api'
-version '1.0.0'
+version '1.0.1'
 source 'https://github.com/Adaptavist/puppet-nagios_api.git'
 author 'adaptavist'
 license 'Apache2'
