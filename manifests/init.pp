@@ -15,12 +15,10 @@ class nagios_api(
 
     package { $package_deps:
         ensure => installed,
-    } ->
-    package { $nagios_api_deps:
+    } -> package { $nagios_api_deps:
         ensure   => installed,
         provider => pip,
-    } ->
-    package { $nagios_api_package:
+    } -> package { $nagios_api_package:
         ensure   => installed,
         provider => pip,
     }
@@ -34,8 +32,7 @@ class nagios_api(
         group   => 'root',
         mode    => '0644',
         require => Package[$nagios_api_package],
-    } ->
-    service { $nagios_api_service:
+    } -> service { $nagios_api_service:
         ensure     => running,
         provider   => $nagios_api_service_provider,
         enable     => true,
